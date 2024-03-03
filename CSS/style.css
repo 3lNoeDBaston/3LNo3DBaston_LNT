@@ -1,5 +1,12 @@
 *{
-    background-color: #cb94ff;
+    background-color: #51cedf;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    color: rgb(138, 10, 150);
+    text-align: justify;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
