@@ -2,29 +2,3 @@
     background-color: #000000;
     
 }
-
-h1{
-    color: rgb(135, 168, 240);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: right;
-}
-
-
-h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(155, 255, 141);
-    text-align: center;
-}
-
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(156, 157, 250);
-    text-align: left;
-}
-
-h4{
-    font-size: 20px;
-    font-family: cursive;
-    color: rgb(255, 172, 211);
-    text-align: center;
-}
