@@ -1,4 +1,33 @@
-*{
-    background-color: #000000;
-    
+.container{
+    background-color: #709af6;
+}
+body{
+    background-color: #709af6;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    background-color: #709af6;
+    color: rgb(238, 39, 122);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
+
+aside{
+    width: 100%;
+    height: 36rem;
+    background-color: rgba(105, 235, 137, 0.79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(155, 255, 141);
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 4rem;
+    color: rgb(238, 39, 122);
+    background-color: #709af6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
