@@ -4,9 +4,9 @@
 }
 
 body{
-    background-image: url(../imagen/aña.jpg);
+    background-image: url(../Imagen/flor\ de\ loto.jpg);
     background-size: cover;
-    color: rgb(41, 238, 178);
+    color: rgb(19, 36, 31);
     display: flex;
     align-items: center;
     flex-direction: column;
