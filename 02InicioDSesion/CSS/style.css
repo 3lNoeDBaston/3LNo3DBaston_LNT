@@ -14,7 +14,7 @@ body{
 }
 
 .userlogin {
-    background-color: #e7e4e4;
+    background-color:rgba(229, 233, 241, 0.278);
     width: 600px;
     height: 50px;
     text-align: center;
@@ -30,7 +30,7 @@ body{
 }
 
 .passwordlogin {
-    background-color: rgba(229, 233, 241, 0.726);
+    background-color: rgba(229, 233, 241, 0.278);
     width: 600px;
     height: 50px;
     text-align: center;
