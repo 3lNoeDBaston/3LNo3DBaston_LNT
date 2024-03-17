@@ -10,7 +10,6 @@ body{
 
 /*--------------------------------------------------*/
 .cabecera img{
-    margin-top: 3%;
     margin-left: 5px;
     height: 80px;
 }
@@ -41,6 +40,7 @@ table {
 .pagcontenidos, .subtemas{
     display: inline-flex;
     font-size: larger;
+    padding: 5px;
 }
 
 
@@ -50,7 +50,7 @@ table {
 
 /*--------------------------------------------------*/
 .cabecera{
-    
+    padding: 6px;
     height: 5rem;
     color: aliceblue;
     width: 30%;
@@ -84,10 +84,28 @@ table {
 
 
 /*--------------------------------------------------*/
+
+.pagcontenidos h1{
+    text-align: center;
+}
+
+
+
+
+/*--------------------------------------------------*/
+.pagcontenidos img{
+    padding: 10px;
+    height: 40%;
+    width: 40%;
+    margin-left: 30%;
+}
+
+
+/*--------------------------------------------------*/
 .redes{
     display: grid;
     grid-template-columns: repeat(4, auto);
-    margin-left: 200px;
+    margin-left: 250px;
     width: 80%;
 }
 
