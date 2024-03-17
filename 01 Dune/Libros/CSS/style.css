@@ -16,7 +16,7 @@ body{
 
 /*--------------------------------------------------*/
 table {
-    width: 1400px;
+    width: 320%;
     height: 1px;
   }
 
@@ -37,6 +37,7 @@ table {
 /*--------------------------------------------------*/
 .pagcontenidos, .subtemas{
     display: inline-flex;
+    font-size: larger;
 }
 
 
@@ -71,6 +72,8 @@ table {
     color: #000000;
     width: 78%;
     height: 35rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
 }
 
 
