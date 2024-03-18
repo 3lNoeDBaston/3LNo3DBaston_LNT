@@ -74,3 +74,14 @@ body{
 .xd{
     text-align: center;
 }
+
+
+
+.return{
+    color: rgb(253, 253, 253);
+    text-align: left;
+}
+
+.component{
+    height: 20rem;
+}
