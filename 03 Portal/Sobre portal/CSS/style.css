@@ -9,7 +9,7 @@ body{
 
 /*--------------------------------------------------*/
 header{
-    background-color:rgba(229, 233, 241, 0.328);
+    background-color:rgba(229, 233, 241, 0.159);
     display: grid; 
     grid-template-columns: repeat(2,auto);
     width: 100%;
@@ -21,7 +21,7 @@ header{
 
 
 /*--------------------------------------------------*/
-h2{
+    h2{
     color: #ffffff;
     text-align: right;
 }
@@ -29,29 +29,33 @@ h2{
 
 
 /*--------------------------------------------------*/
-.cabecera, .pagcontenidos, .redes{
+header, .pagcontenidos, .redes{
     border-radius: 2rem;
 }
 
 
 /*--------------------------------------------------*/
 .pagcontenidos{
-    background-color:rgba(229, 233, 241, 0.328);
+    background-color:rgba(229, 233, 241, 0.159);
     color: #ffffff;
     width: 100%;
-    height: 38.4rem;
+    height: 36rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     margin-top: 1%;
 }
 
-
-
+.pagcontenidos img{
+    padding: 10px;
+    height: 50%;
+    width: 40%;
+    margin-left: 30%;
+}
 
 /*--------------------------------------------------*/
 .redes{
     display: grid;
-    background-color:rgba(229, 233, 241, 0.328);
+    background-color:rgba(229, 233, 241, 0.159);
     grid-template-columns: repeat(4, auto) 0.9% ;
     margin-top: 1%;
     width: 100%;
@@ -64,7 +68,7 @@ h2{
 .redes img{
     
     border-radius: 10px;
-    background-color:rgba(229, 233, 241, 0.328);
+    background-color:rgba(229, 233, 241, 0.159);
     padding: 20px;
     width: 30px;
     height: 30px;
