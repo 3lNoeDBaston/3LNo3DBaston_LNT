@@ -14,7 +14,7 @@ body{
 }
 
 .userlogin {
-    background-color:rgba(229, 233, 241, 0.278);
+    background-color:rgba(229, 233, 241, 0);
     width: 600px;
     height: 50px;
     text-align: center;
@@ -30,7 +30,7 @@ body{
 }
 
 .passwordlogin {
-    background-color: rgba(229, 233, 241, 0.278);
+    background-color: rgba(229, 233, 241, 0);
     width: 600px;
     height: 50px;
     text-align: center;
@@ -54,10 +54,11 @@ body{
 
 
 .buttons{
-    margin-top: 20px;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .buttons button{
@@ -73,15 +74,16 @@ body{
 
 .xd{
     text-align: center;
+    color: rgb(241, 255, 176);
 }
 
 
 
 .return{
     color: rgb(253, 253, 253);
-    text-align: left;
+    text-align: center;
 }
 
 .component{
-    height: 20rem;
+    height: 35rem;
 }
