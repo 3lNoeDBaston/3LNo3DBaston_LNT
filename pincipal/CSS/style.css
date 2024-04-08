@@ -4,7 +4,6 @@ body{
     background-size: cover;
     color: rgb(41, 238, 178);
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-content: center;
 }
@@ -16,7 +15,9 @@ body{
 h2{
     text-align: left;
 }
-
+h3{
+    color: aliceblue;
+}
 
 
 
