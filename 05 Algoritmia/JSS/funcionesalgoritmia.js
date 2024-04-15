@@ -1,10 +1,31 @@
-function problema1()
-{
+function problema1() {
+    var p1_input = document.querySelector('#p1-input').value.trim();
+    
+    // Verificar si el input está vacío
+    if (p1_input === '') {
+        document.querySelector('#p1-output').textContent = 'Por favor, ingresa algunas palabras.';
+        return;
+    }
+    
+    if (/[0-9]/.test(p1_input)) {
+        alert('Por favor, ingresa solo letras en el campo.');
+        return;
+    }
+    
+    var arr = p1_input.split(' ');
 
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].split('').reverse().join('');
+    }
+    
+    var p1_res = arr.join(' ');
+
+    document.querySelector('#p1-output').textContent = p1_res;
 }
 
-function problema2()
-{
+
+
+function problema2(){
     var p2_x1 = document.querySelector('#p2-x1').value;
     var p2_x2 = document.querySelector('#p2-x2').value;
     var p2_x3 = document.querySelector('#p2-x3').value;
@@ -17,34 +38,56 @@ function problema2()
     var p2_y4 = document.querySelector('#p2-y4').value;
     var p2_y5 = document.querySelector('#p2-y5').value;
 
-    //vamos a formar los vectores
     var v1 = [p2_x1, p2_x2, p2_x3, p2_x4, p2_x5];
     var v2 = [p2_y1, p2_y2, p2_y3, p2_y4, p2_y5];
 
-    //vamos a meter una funcion de ordenamiento
-    v1 = v1.sort(function(a,b)
-    {
+    v1 = v1.sort(function(a,b){
         return b-a;
-    });
+    })
 
-    v2 = v2.sort(function(a,b)
-    {
+    v2 = v2.sort(function(a,b){
         return b-a;
-    });
+    })
 
-    //invierte la cadena
     v2 = v2.reverse();
 
-    //vamos a recorrer el v1 y lo vamos a multiplicar el inverso del v2
     var p2_producto = 0;
-    for(var i = 0; i<v1.length; i++){
+
+    for(var i=0; i<v1.length; i++){
         p2_producto += v1[i] * v2[i];
     }
-    //muestro el resultado
-    document.querySelector('#p2-output').textContent = 'El producto escalar minimo es de: ' + p2_producto;
+
+    document.querySelector('#p2-output').textContent = 'Producto Escalar Minimo: ' + p2_producto;
 }
 
-function problema3()
-{
+function problema3() {
+    var p3_input = document.querySelector('#p3-input').value.trim();
     
+    if (p3_input === '') {
+        document.querySelector('#p3-output').textContent = 'Por favor, ingresa algunas palabras.';
+        return;
+    }
+    
+    if (/[a-z,0-9]/.test(p3_input)) {
+        alert('Por favor, ingresa solo letras en mayúsculas en el campo.');
+        return;
+    }
+
+    var palabras = p3_input.split(',');
+    var maxCaracteresUnicos = 0;
+    var palabraMaxCaracteresUnicos = '';
+    var caracteresUnicosPalabraMax = [];
+
+    for (var i = 0; i < palabras.length; i++) {
+        var palabra = palabras[i].toUpperCase();
+        var caracteresUnicos = [...new Set(palabra)].length; 
+        if (caracteresUnicos > maxCaracteresUnicos) {
+            maxCaracteresUnicos = caracteresUnicos;
+            palabraMaxCaracteresUnicos = palabra;
+            caracteresUnicosPalabraMax = [...new Set(palabra)].join(', ');
+        }
+    }
+
+    document.querySelector('#p3-output').textContent = `${palabraMaxCaracteresUnicos} = ${maxCaracteresUnicos} (${caracteresUnicosPalabraMax})`;
+
 }
